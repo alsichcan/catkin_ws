@@ -64,10 +64,12 @@ CMAKE_BINARY_DIR = /home/park/dev/catkin_ws/build
 
 # The main recursive "all" target.
 all: gtest/all
+all: basics/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
+preinstall: basics/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
@@ -77,7 +79,23 @@ clean: CMakeFiles/run_tests.dir/clean
 clean: CMakeFiles/clean_test_results.dir/clean
 clean: CMakeFiles/doxygen.dir/clean
 clean: gtest/clean
+clean: basics/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory basics
+
+# Recursive "all" directory target.
+basics/all:
+.PHONY : basics/all
+
+# Recursive "preinstall" directory target.
+basics/preinstall:
+.PHONY : basics/preinstall
+
+# Recursive "clean" directory target.
+basics/clean: basics/CMakeFiles/_catkin_empty_exported_target.dir/clean
+.PHONY : basics/clean
 
 #=============================================================================
 # Directory level rules for directory gtest
@@ -361,6 +379,32 @@ gtest_main: gtest/googletest/CMakeFiles/gtest_main.dir/rule
 gtest/googletest/CMakeFiles/gtest_main.dir/clean:
 	$(MAKE) $(MAKESILENT) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/clean
 .PHONY : gtest/googletest/CMakeFiles/gtest_main.dir/clean
+
+#=============================================================================
+# Target rules for target basics/CMakeFiles/_catkin_empty_exported_target.dir
+
+# All Build rule for target.
+basics/CMakeFiles/_catkin_empty_exported_target.dir/all:
+	$(MAKE) $(MAKESILENT) -f basics/CMakeFiles/_catkin_empty_exported_target.dir/build.make basics/CMakeFiles/_catkin_empty_exported_target.dir/depend
+	$(MAKE) $(MAKESILENT) -f basics/CMakeFiles/_catkin_empty_exported_target.dir/build.make basics/CMakeFiles/_catkin_empty_exported_target.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/park/dev/catkin_ws/build/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
+.PHONY : basics/CMakeFiles/_catkin_empty_exported_target.dir/all
+
+# Build rule for subdir invocation for target.
+basics/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/park/dev/catkin_ws/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 basics/CMakeFiles/_catkin_empty_exported_target.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/park/dev/catkin_ws/build/CMakeFiles 0
+.PHONY : basics/CMakeFiles/_catkin_empty_exported_target.dir/rule
+
+# Convenience name for target.
+_catkin_empty_exported_target: basics/CMakeFiles/_catkin_empty_exported_target.dir/rule
+.PHONY : _catkin_empty_exported_target
+
+# clean rule for target.
+basics/CMakeFiles/_catkin_empty_exported_target.dir/clean:
+	$(MAKE) $(MAKESILENT) -f basics/CMakeFiles/_catkin_empty_exported_target.dir/build.make basics/CMakeFiles/_catkin_empty_exported_target.dir/clean
+.PHONY : basics/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

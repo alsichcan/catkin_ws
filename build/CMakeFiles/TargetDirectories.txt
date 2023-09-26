@@ -35,3 +35,11 @@
 /home/park/dev/catkin_ws/build/gtest/googletest/CMakeFiles/install.dir
 /home/park/dev/catkin_ws/build/gtest/googletest/CMakeFiles/install/local.dir
 /home/park/dev/catkin_ws/build/gtest/googletest/CMakeFiles/install/strip.dir
+/home/park/dev/catkin_ws/build/basics/CMakeFiles/_catkin_empty_exported_target.dir
+/home/park/dev/catkin_ws/build/basics/CMakeFiles/test.dir
+/home/park/dev/catkin_ws/build/basics/CMakeFiles/edit_cache.dir
+/home/park/dev/catkin_ws/build/basics/CMakeFiles/rebuild_cache.dir
+/home/park/dev/catkin_ws/build/basics/CMakeFiles/list_install_components.dir
+/home/park/dev/catkin_ws/build/basics/CMakeFiles/install.dir
+/home/park/dev/catkin_ws/build/basics/CMakeFiles/install/local.dir
+/home/park/dev/catkin_ws/build/basics/CMakeFiles/install/strip.dir
